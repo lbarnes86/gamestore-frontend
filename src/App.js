@@ -15,10 +15,10 @@ function App() {
           <Route exact path="/">
             <Invoices />
           </Route>
-          <Route exact path="/games">
+          <Route path="/games">
             <Games />
           </Route>
-          <Route exact path="/consoles">
+          <Route path="/consoles">
             <Consoles />
           </Route>
           <Route exact path="/tshirts">
