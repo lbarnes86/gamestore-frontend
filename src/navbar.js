@@ -14,13 +14,13 @@ function NavbarApp(props) {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="justify-content-end" style={{ width: "100%" }}>
-            <Nav.Link className="nav-link" eventKey={2} href="https://game-store-backend1.herokuapp.com/games">
+            <Nav.Link className="nav-link" eventKey={2} exact path="/games">
               Games
             </Nav.Link>
-            <Nav.Link className="nav-link" eventKey={2} href="https://game-store-backend1.herokuapp.com/consoles">
+            <Nav.Link className="nav-link" eventKey={2} path="/consoles">
               Consoles
             </Nav.Link>
-            <Nav.Link className="nav-link" eventKey={2} href="https://game-store-backend1.herokuapp.com/tshirts">
+            <Nav.Link className="nav-link" eventKey={2} href="/tshirts">
               T-Shirts
             </Nav.Link>
           </Nav>
