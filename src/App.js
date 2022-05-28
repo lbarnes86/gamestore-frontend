@@ -15,12 +15,12 @@ function App() {
           <Route exact path="/">
             <Invoices />
           </Route>
-          <Route exact path="https://game-store-backend1.herokuapp.com/games">
+          <Route exact path="/games">
             <Games />
           </Route>
-          {/* <Route path="/">
+          <Route exact path="/consoles">
             <Consoles />
-          </Route> */}
+          </Route>
           <Route exact path="/tshirts">
             <Tshirts />
           </Route>
