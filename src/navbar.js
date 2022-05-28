@@ -1,9 +1,11 @@
 import React from "react";
 
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Nav, Navbar, Container } from "react-bootstrap";
 
 function NavbarApp(props) {
   return (
+    <Router>
     <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" fixed="top">
       <Container>
         <Navbar.Brand className="logo-link" href="/">
@@ -27,6 +29,7 @@ function NavbarApp(props) {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </Router>
   );
 }
 
