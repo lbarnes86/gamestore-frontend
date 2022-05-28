@@ -18,7 +18,7 @@ function App() {
           <Route exact path="https://game-store-backend1.herokuapp.com/games">
             <Games />
           </Route>
-          <Route path="/consoles">
+          <Route path="/">
             <Consoles />
           </Route>
           <Route exact path="/tshirts">
