@@ -5,7 +5,7 @@ import { Nav, Navbar, Container } from "react-bootstrap";
 function NavbarApp(props) {
   return (
     <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" fixed="top">
-      {/* <Container> */}
+ 
         <Navbar.Brand className="logo-link" href="/">
           <h1 className="logo">
           Game Store
@@ -25,7 +25,7 @@ function NavbarApp(props) {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-      {/* </Container> */}
+     
     </Navbar>
   );
 }
