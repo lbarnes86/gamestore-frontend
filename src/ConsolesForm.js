@@ -14,8 +14,8 @@ function ConsolesForm({ consoles: initialConsoles, notify }) {
     evt.preventDefault();
 
     const url = isAdd
-      ? "http://localhost:8080/consoles"
-      : `http://localhost:8080/consoles/${consoles.id}`;
+      ? "https://game-store-backend1.herokuapp.com/consoles"
+      : `https://game-store-backend1.herokuapp.com/consoles/${consoles.id}`;
     const method = isAdd ? "POST" : "PUT";
     const expectedStatus = isAdd ? 201 : 204;
 

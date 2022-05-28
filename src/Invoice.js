@@ -10,7 +10,7 @@ function Invoices() {
   const [error, setError] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:8080/invoices")
+    fetch("https://game-store-backend1.herokuapp.com/invoices")
       .then((response) => {
         console.log(response);
         return response.json();

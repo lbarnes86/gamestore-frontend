@@ -1,6 +1,6 @@
 function GamesCard({ games, notify }) {
   function handleDelete() {
-    fetch(`http://localhost:8080/games/${games.id}`, {
+    fetch(`https://game-store-backend1.herokuapp.com/games/${games.id}`, {
       method: "DELETE",
     })
       .then(() => notify({ action: "delete", games: games }))

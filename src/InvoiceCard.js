@@ -2,7 +2,7 @@
 
 function InvoiceCard({ invoices, notify }) {
   function handleDelete() {
-    fetch(`http://localhost:8080/invoices/${invoices.id}`, {
+    fetch(`https://game-store-backend1.herokuapp.com/invoices/${invoices.id}`, {
       method: "DELETE",
     })
       .then(() => notify({ action: "delete", invoices: invoices }))

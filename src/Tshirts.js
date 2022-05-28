@@ -9,7 +9,7 @@ function Tshirts() {
   const [error, setError] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:8080/tshirts")
+    fetch("https://game-store-backend1.herokuapp.com/tshirts")
       .then((response) => response.json())
       .then((result) => setTshirts(result))
       .catch(console.log);

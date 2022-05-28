@@ -10,7 +10,7 @@ function Games() {
   const [error, setError] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:8080/games")
+    fetch("https://game-store-backend1.herokuapp.com/games")
       .then((response) => response.json())
       .then((result) => setGames(result))
       .catch(console.log);

@@ -11,7 +11,7 @@ function InvoicesForm({ invoices: initialInvoices, notify }) {
   const [games, setGames] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/games")
+    fetch("https://game-store-backend1.herokuapp.com/games")
       .then((response) => {
         console.log(response);
         return response.json();
@@ -21,7 +21,7 @@ function InvoicesForm({ invoices: initialInvoices, notify }) {
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:8080/consoles")
+    fetch("https://game-store-backend1.herokuapp.com/consoles")
       .then((response) => {
         console.log(response);
         return response.json();
@@ -31,7 +31,7 @@ function InvoicesForm({ invoices: initialInvoices, notify }) {
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:8080/tshirts")
+    fetch("https://game-store-backend1.herokuapp.com/tshirts")
       .then((response) => {
         console.log(response);
         return response.json();
@@ -59,8 +59,8 @@ function InvoicesForm({ invoices: initialInvoices, notify }) {
     evt.preventDefault();
 
     const url = isAdd
-      ? "http://localhost:8080/invoices"
-      : `http://localhost:8080/invoices/${invoices.id}`;
+      ? "https://game-store-backend1.herokuapp.com/invoices"
+      : `https://game-store-backend1.herokuapp.com/invoices/${invoices.id}`;
     const method = isAdd ? "POST" : "PUT";
     const expectedStatus = isAdd ? 201 : 204;
 

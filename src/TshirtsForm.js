@@ -14,8 +14,8 @@ function TshirtsForm({ tshirts: initialTshirts, notify }) {
     evt.preventDefault();
 
     const url = isAdd
-      ? "http://localhost:8080/tshirts"
-      : `http://localhost:8080/tshirts/${tshirts.id}`;
+      ? "https://game-store-backend1.herokuapp.com/tshirts"
+      : `https://game-store-backend1.herokuapp.com/tshirts/${tshirts.id}`;
     const method = isAdd ? "POST" : "PUT";
     const expectedStatus = isAdd ? 201 : 204;
 

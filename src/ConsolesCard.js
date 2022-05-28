@@ -1,6 +1,6 @@
 function ConsolesCard({ consoles, notify }) {
   function handleDelete() {
-    fetch(`http://localhost:8080/consoles/${consoles.id}`, {
+    fetch(`https://game-store-backend1.herokuapp.com/consoles/${consoles.id}`, {
       method: "DELETE",
     })
       .then(() => notify({ action: "delete", consoles: consoles }))

@@ -10,7 +10,7 @@ function Consoles() {
   const [error, setError] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:8080/consoles")
+    fetch("https://game-store-backend1.herokuapp.com/consoles")
       .then((response) => response.json())
       .then((result) => setConsoles(result))
       .catch(console.log);

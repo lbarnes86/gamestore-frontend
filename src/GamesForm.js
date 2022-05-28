@@ -14,8 +14,8 @@ function GamesForm({ games: initialGames, notify }) {
     evt.preventDefault();
 
     const url = isAdd
-      ? "http://localhost:8080/games"
-      : `http://localhost:8080/games/${games.id}`;
+      ? "https://game-store-backend1.herokuapp.com/games"
+      : `https://game-store-backend1.herokuapp.com/games/${games.id}`;
     const method = isAdd ? "POST" : "PUT";
     const expectedStatus = isAdd ? 201 : 204;
 
